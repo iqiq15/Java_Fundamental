@@ -7,14 +7,34 @@ public class CalendarDemo {
 	private int totalCount;
 	int[] monthArray = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
+	public CalendarDemo(int y){
+		//year = y;
+		this(y,0,0);
+	}
+	
+	public CalendarDemo(int y, int m){
+		//year = y;
+		//month = m;
+		this(y,m,0);
+	}
+	
+	//매개변수 3개짜리 생성자
+	public CalendarDemo(int year, int month, int day){
+		this.year = year;
+		this.month = month;
+		this.day = day;
+		getTotalCount();
+	}
+	
+	
 	public void set(int y, int m, int d) {
 		year = y;
 		month = m;
 		day = d;
-
+		getTotalCount();
 	}
 
-	public int getTotalCount() {
+	private int getTotalCount() {
 		int preYear = year - 1;
 		int preMonth = month - 1;
 		// int totalCount = 0;
@@ -56,11 +76,15 @@ public class CalendarDemo {
 		}
 		System.out.printf("%d년 %d월 %d일 %s 입니다.", year, month, day, message);
 	}
-
+	/*
+	public CalendarDemo(){
+		
+	}
+	*/
 	public static void main(String[] args) {
-		CalendarDemo c = new CalendarDemo();
-		c.set(2019, 12, 25);
-		c.getTotalCount();
+		CalendarDemo c = new CalendarDemo(2019,12,25);
+		//c.set(2019, 12, 25);
+		//c.getTotalCount();
 		c.print();
 	}
 }
