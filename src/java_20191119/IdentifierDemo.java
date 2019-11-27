@@ -18,6 +18,11 @@ public class IdentifierDemo {
 		//자바에서 문자는 유니코드를 의미하기 떄문에 세계 모든 문자를 사용할 수 있음.
 		String 이름 = "성영한";
 		System.out.println(age);
+		
+		int s = 10;
+		s = s + 1;
+		s = s + 2;
+		System.out.println(s);
 	}
 	
 }
