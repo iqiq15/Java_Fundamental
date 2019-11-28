@@ -1,6 +1,7 @@
 package java_20191128;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class MemberManagementDemo {
@@ -50,7 +51,7 @@ public class MemberManagementDemo {
 
 		Member m = new Member(id, name);
 		list.add(m);
-
+		
 		System.out.printf("총 회원은 %d명 입니다.%n", list.size());
 
 		print();
@@ -67,7 +68,13 @@ public class MemberManagementDemo {
 	// 5. 번호를 선택하세요> 메세지를 출력한 후 키보드 입력을 받게 대기 한다.
 	// 6. 번호를 입력받으면 run()메서드를 호출한다.
 	public void update() {
-
+		String id = console("수정할 아이디>");
+		
+			
+		
+			
+		
+		
 	}
 
 	// 1. 삭제할 아이디를 입력받는다.
@@ -78,7 +85,9 @@ public class MemberManagementDemo {
 	// 5. 번호를 선택하세요> 메세지를 출력한 후 키보드 입력을 받게 대기 한다.
 	// 6. 번호를 입력받으면 run()메서드를 호출한다.
 	public void delete() {
-
+		String id = console("삭제할 아이디>");
+		//if
+		list.remove(id);
 	}
 
 	// 1. 검색할 아이디를 입력받는다.
