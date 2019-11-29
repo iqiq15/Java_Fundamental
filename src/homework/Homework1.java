@@ -52,6 +52,17 @@ public class Homework1 {
 		}
 		System.out.printf("%d년 %d월 %d일 %s 입니다.", year, month, day, message);
 	}
+	
+	public static void main1(String[] args) {
+		System.out.println("일\t월\t화\t수\t목\t금\t토");
+		for (int i = 1; i <= 31; i++) {
+			System.out.println("\t");
+			if(i%7 ==0){
+				System.out.println("\t");
+			}
+			
+		}
+	}
 }
 
 /* 내가 만든
