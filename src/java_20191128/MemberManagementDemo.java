@@ -68,8 +68,8 @@ public class MemberManagementDemo {
 	// 5. 번호를 선택하세요> 메세지를 출력한 후 키보드 입력을 받게 대기 한다.
 	// 6. 번호를 입력받으면 run()메서드를 호출한다.
 	public void update() {
-		String idMem = console("수정할 아이디>");
-	
+		String id = console("수정할 아이디>");
+		
 			
 		
 			
@@ -86,7 +86,7 @@ public class MemberManagementDemo {
 	// 6. 번호를 입력받으면 run()메서드를 호출한다.
 	public void delete() {
 		String id = console("삭제할 아이디>");
-		//if
+		
 		list.remove(id);
 	}
 

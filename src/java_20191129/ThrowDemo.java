@@ -1,4 +1,4 @@
-package javja_20191129;
+package java_20191129;
 
 public class ThrowDemo {
 	public static double getAverage(int[] temp) 

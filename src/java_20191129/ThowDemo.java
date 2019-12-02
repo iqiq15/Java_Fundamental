@@ -1,4 +1,4 @@
-package javja_20191129;
+package java_20191129;
 
 public class ThowDemo {
 	public static double withdraw(String account, int amount) throws Exception {

@@ -1,4 +1,4 @@
-package javja_20191129;
+package java_20191129;
 
 public class InCorrectAccountException extends Exception{
 	public InCorrectAccountException(String message){
